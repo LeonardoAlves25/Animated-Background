@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style05.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Landing page</title>
+</head>
+
+<body>
+
+    <section class="showcase">
+        <header>
+            <h2 class="logo">BIT Travel</h2>
+            <div class="toggle"></div>
+        </header>
+
+    <video src="img/ezgif.com-gif-maker.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>never stop</h2>
+            <h3>exploring the bits</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore similique totam illo aliquam eius porro.
+            </p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <a href="#">
+                <li class="fa fa-facebook"></li>
+            </a>
+            <a href="#">
+                <li class="fa fa-instagram"></li>
+            </a>
+            <a href="#">
+                <li class="fa fa-twitter"></li>
+            </a>
+        </ul>
+    </section>
+
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</li>
+            <li><a href="#">8-bits arts</li>
+            <li><a href="#">Collection</li>
+            <li><a href="#">Contact</li>
+            <li><a href="#">About</li>
+        </ul>
+    </div>
+</body>
+<script>
+    const menuToggle = document.querySelector('.toggle')
+    const showCase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showCase.classList.toggle('active')
+
+        })
+</script>
+</html>
